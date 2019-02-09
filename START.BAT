@@ -22,7 +22,7 @@ if %ERRORLEVEL% equ 0 (
 goto :eof
 :payload
 set /p npath=<%pth%
-cd %npath%
+cd /D %npath%
 del "%pth%"
 :script
 python __main__.py
