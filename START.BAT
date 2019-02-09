@@ -1,4 +1,7 @@
 @echo off
+
+REM This file is required to be run in order to get administrator privileges in Windows
+
 set pth=%temp%\tmp_dir_path.txt
 NET SESSION >nul 2>&1
 if %ERRORLEVEL% equ 0 (
